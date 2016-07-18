@@ -17,83 +17,88 @@ values."
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
-   '(
-     ;; ----------------------------------------------------------------
-     ;; Example of useful layers you may want to use right away.
-     ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
-     ;; <M-m f e R> (Emacs style) to install them.
-     ;; ----------------------------------------------------------------
-     ;; config
-     ansible
-     dockerfile
-     ;; salt
-     terraform
-     ;; frameworks
-     ;; django
-     react
-     ;; ruby-on-rails
-     ;; irc
-     ;; erc
-     ;; lang
-     c-c++
-     clojure
-     common-lisp
-     ;; d
-     elixir
-     elm
-     emacs-lisp
-     erlang
-     ess
-     extra-langs
-     go
-     haskell
-     html
-     ;; java
-     javascript
-     markdown
-     nim
-     ocaml
-     (python :variables python-enable-yapf-format-on-save t)
-     ;; racket
-     ruby
-     (rust :variables
-           rust-enable-racer t)
-     scala
-     scheme
-     shell-scripts
-     sml
-     sql
-     swift
-     typescript
-     vimscript
-     yaml
-     ;; source-control
-     (git :variables
-          git-gutter-use-fringe t)
-     version-control
-     ;; tools
-     vagrant
-     ;;
-     (auto-completion :variables
-                      auto-completion-enable-sort-by-usage t
-                      auto-completion-enable-snippets-in-popup t)
-     better-defaults
-     ;; chrome
-     (colors :variables colors-enable-rainbow-identifiers t)
-     ;; gtags
-     org
-     osx
-     (shell :variables shell-default-shell 'shell)
-     syntax-checking
-     themes-megapack
-     ;; custom
-     ;; elpy
-     ;; edts
-     ;; magit-gerrit
-     groovy
-     editorconfig
-     objc
-   )
+    '(
+       ;; ----------------------------------------------------------------
+       ;; Example of useful layers you may want to use right away.
+       ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
+       ;; <M-m f e R> (Emacs style) to install them.
+       ;; ----------------------------------------------------------------
+       ;; config
+       ansible
+       dockerfile
+       ;; puppet
+       ;; salt
+       terraform
+       ;; frameworks
+       ;; django
+       react
+       ;; ruby-on-rails
+       ;; irc
+       ;; erc
+       ;; lang
+       asciidoc
+       c-c++
+       clojure
+       common-lisp
+       d
+       elixir
+       elm
+       emacs-lisp
+       erlang
+       ess
+       extra-langs
+       go
+       haskell
+       html
+       idris
+       ;; java
+       javascript
+       markdown
+       nim
+       ocaml
+       (python :variables python-enable-yapf-format-on-save t)
+       racket
+       ruby
+       (rust :variables
+         rust-enable-racer t)
+       scala
+       scheme
+       shell-scripts
+       sml
+       sql
+       swift
+       typescript
+       vimscript
+       yaml
+       ;; source-control
+       (git :variables
+         git-gutter-use-fringe t)
+       github
+       version-control
+       ;; tools
+       vagrant
+       ;;
+       (auto-completion :variables
+         auto-completion-enable-sort-by-usage t
+         auto-completion-enable-snippets-in-popup t)
+       better-defaults
+       ;; chrome
+       (colors :variables colors-enable-rainbow-identifiers t)
+       ;; gtags
+       org
+       osx
+       (shell :variables shell-default-shell 'shell)
+       spell-checking
+       syntax-checking
+       themes-megapack
+       ;; custom
+       ;; elpy
+       ;; edts
+       ;; magit-gerrit
+       groovy
+       editorconfig
+       objc
+       )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages then consider to create a layer, you can also put the
