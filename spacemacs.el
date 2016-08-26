@@ -16,7 +16,7 @@ values."
    dotspacemacs-configuration-layer-path '("~/spacemacs/")
    ;; List of configuration layers to load. If it is the symbol `all' instead
    ;; of a list then all discovered layers will be installed.
-   dotspacemacs-configuration-layers
+    dotspacemacs-configuration-layers
     '(
        ;; ----------------------------------------------------------------
        ;; Example of useful layers you may want to use right away.
@@ -87,8 +87,10 @@ values."
        ;; gtags
        org
        osx
-       (shell :variables shell-default-shell 'shell)
-       spell-checking
+       (shell :variables
+         shell-default-term-shell "/usr/local/bin/fish"
+         shell-default-shell 'eshell)
+       ;; spell-checking
        syntax-checking
        themes-megapack
        ;; custom
@@ -98,18 +100,19 @@ values."
        groovy
        editorconfig
        objc
+       direnv
        )
-   ;; List of additional packages that will be installed without being
-   ;; wrapped in a layer. If you need some configuration for these
-   ;; packages then consider to create a layer, you can also put the
-   ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '()
-   ;; A list of packages and/or extensions that will not be install and loaded.
-   dotspacemacs-excluded-packages '()
-   ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
-   ;; are declared in a layer which is not a member of
-   ;; the list `dotspacemacs-configuration-layers'. (default t)
-   dotspacemacs-delete-orphan-packages t))
+    ;; List of additional packages that will be installed without being
+    ;; wrapped in a layer. If you need some configuration for these
+    ;; packages then consider to create a layer, you can also put the
+    ;; configuration in `dotspacemacs/user-config'.
+    dotspacemacs-additional-packages '()
+    ;; A list of packages and/or extensions that will not be install and loaded.
+    dotspacemacs-excluded-packages '()
+    ;; If non-nil spacemacs will delete any orphan packages, i.e. packages that
+    ;; are declared in a layer which is not a member of
+    ;; the list `dotspacemacs-configuration-layers'. (default t)
+    dotspacemacs-delete-orphan-packages t))
 
 (defun dotspacemacs/init ()
   "Initialization function.
