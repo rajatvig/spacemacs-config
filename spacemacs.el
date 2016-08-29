@@ -92,7 +92,7 @@ values."
          shell-default-shell 'eshell)
        ;; spell-checking
        syntax-checking
-       themes-megapack
+       ;; themes-megapack
        ;; custom
        ;; elpy
        ;; edts
@@ -160,10 +160,7 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         colorsarenice-dark
-                         jazz
                          sanityinc-tomorrow-eighties
-                         darkmine
                          spacemacs-dark
                          sanityinc-tomorrow-night
                          solarized-dark
