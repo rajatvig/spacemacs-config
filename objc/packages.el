@@ -9,6 +9,7 @@
   (add-to-list 'auto-mode-alist '("Fastfile$" . ruby-mode))
   (add-to-list 'auto-mode-alist '("Gymfile$" . ruby-mode))
   (add-to-list 'auto-mode-alist '("Scanfile$" . ruby-mode))
+  (add-to-list 'auto-mode-alist '("Deliverfile$" . ruby-mode))
   (add-to-list 'magic-mode-alist
     `(,(lambda ()
          (and (string= (file-name-extension buffer-file-name) "h")
