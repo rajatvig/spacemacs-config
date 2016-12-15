@@ -36,12 +36,23 @@ values."
        ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
        ;; <M-m f e R> (Emacs style) to install them.
        ;; ----------------------------------------------------------------
+       ;; chat
+       ;; erc
+       ;; checkers
+       (spell-checking :variables spell-checking-enable-by-default nil)
+       syntax-checking
+       ;; completion
+       (auto-completion :variables
+         auto-completion-enable-sort-by-usage t
+         auto-completion-enable-snippets-in-popup t)
+       helm
+       ;; emacs
+       better-defaults
+       org
        ;; frameworks
        ;; django
        react
        ;; ruby-on-rails
-       ;; irc
-       ;; erc
        ;; lang
        asciidoc
        (c-c++ :variables c-c++-enable-clang-support t)
@@ -54,6 +65,7 @@ values."
        erlang
        ess
        extra-langs
+       fsharp
        go
        haskell
        html
@@ -63,6 +75,7 @@ values."
        (markdown :variables markdown-live-preview-engine 'vmd)
        nim
        ocaml
+       php
        (python :variables python-enable-yapf-format-on-save t)
        racket
        ruby
@@ -77,39 +90,34 @@ values."
        typescript
        vimscript
        yaml
+       ;; os
+       osx
        ;; source-control
        (git :variables
          git-gutter-use-fringe t)
        github
        version-control
+       ;; tags
+       ;; gtags
+       ;; themes
+       (colors :variables colors-colorize-identifiers 'all)
        ;; tools
        ansible
-       docker
-       ;; puppet
-       ;; salt
-       terraform
-       vagrant
-       ;;
-       helm
-       (auto-completion :variables
-         auto-completion-enable-sort-by-usage t
-         auto-completion-enable-snippets-in-popup t)
-       better-defaults
        ;; chrome
-       (colors :variables colors-colorize-identifiers 'all)
-       ;; gtags
-       org
-       osx
+       docker
+       nginx
+       ;; puppet
+       ranger
+       ;; salt
        (shell :variables
          shell-default-term-shell "/usr/local/bin/fish"
          shell-default-shell 'eshell)
-       (spell-checking :variables spell-checking-enable-by-default nil)
-       syntax-checking
-       ;; themes-megapack
+       terraform
+       vagrant
        ;; custom
        ;; elpy
        ;; edts
-       ;; magit-gerrit
+       magit-gerrit
        groovy
        editorconfig
        objc
