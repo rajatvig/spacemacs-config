@@ -1,6 +1,5 @@
 (setq direnv-packages
       '(
-        projectile
         projectile-direnv
         ))
 
