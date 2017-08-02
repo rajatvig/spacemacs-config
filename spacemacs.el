@@ -377,6 +377,8 @@ before packages are loaded. If you are unsure, you should try in setting them in
   ;; (setq racer-rust-src-path "~/work/private/tryouts/rust/rust/src")
   (setq projectile-enable-caching t)
   (setq exec-path (append exec-path '("/usr/local/bin")))
+  (setq exec-path (append exec-path '("/usr/local/var/n/bin")))
+  (setq exec-path (append exec-path '("/usr/local/var/rbenv/shims")))
   )
 
 (defun dotspacemacs/user-config ()
