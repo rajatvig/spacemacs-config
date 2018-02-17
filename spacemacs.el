@@ -137,13 +137,6 @@ values."
     dotspacemacs-frozen-packages '()
     ;; A list of packages that will not be installed and loaded.
     dotspacemacs-excluded-packages '(
-                                ess-R-object-popup
-                                firebelly-theme
-                                niflheim-theme
-                                pastels-on-dark-theme
-                                tronesque-theme
-                                wolfram-mode
-                                zonokai-theme
                                 )
     ;; Defines the behaviour of Spacemacs when installing packages.
     ;; Possible values are `used-only', `used-but-keep-unused' and `all'.
@@ -213,6 +206,8 @@ values."
     ;; Press <SPC> T n to cycle to the next theme in the list (works great
     ;; with 2 themes variants, one dark and one light)
     dotspacemacs-themes '(
+                           material-light
+                           material
                            sanityinc-tomorrow-eighties
                            sanityinc-tomorrow-night
                            spacemacs-dark
