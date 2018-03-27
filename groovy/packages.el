@@ -14,7 +14,9 @@
     :mode ("\\.groovy\\'" . groovy-mode)
     :init
     (progn
-      (setq c-basic-offset 4))))
+      (setq c-basic-offset 4)))
+  (add-to-list 'auto-mode-alist '("Jenkinsfile$" . groovy-mode))
+  )
 
 (defun groovy/post-init-flycheck ()
   (add-hook 'groovy-mode-hook 'flycheck-mode))
